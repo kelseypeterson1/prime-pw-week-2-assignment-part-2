@@ -26,8 +26,8 @@ if (number >= 2) {
 
 
 // 1. A GREETING BASED ON A NAME.
-// First we make name a variable and define it as a string "Dane".
-// Next we enter a conditional statement. The code checks to see if the variable name is equal to the string "Mary".
+// First we make name a variable and set it to "Dane".
+// Next the code checks to see if name is equal to the string "Mary".
 // It's not, so it jumps to the else statement and console logs "How do you do?"
 //
 
@@ -47,10 +47,10 @@ if (name === 'Mary') {
 // 2. DETERMINING THE SECRET LEVEL THROUGH A CODE NUMBER.
 // First, secret is defined as a variable.
 // Next, code is defined as a variable and given the number value of 123.
-// Next, the code enters a conditional statement. It checks to see if code equals the number value 123.
+// We check to see if code equals the number value 123.
 // It does, so the variable secret is set to the string "super".
 // Also code is set to code * 2, meaning the variable code is now set to the number 246.
-// The code now goes to the next conditional statement. It checks to see if code is greater than 250.
+// Next we check to see if code is greater than 250.
 // It's not, so the code jumps to the next line outside of the conditional statement, and it console logs the string "super".
 
 //CODE
@@ -77,9 +77,9 @@ console.log(secret)
 // age is defined as a variable and set to the number 34.
 // zip is defined as a variable and set to the number 55407.
 // The code enters a conditional statement. First, it checks to see if isStudent is equal to true. It is.
-// It also checks to see if zip is greater than 80000. It is not. The first conditional statement fails since both conditions are not meant.
-// The code enters the next conditional statement. It checks to see if isStudent is false. It is not.
-// It then checks to see if age is less than 30. It is not. Since neither of these statements are true, the code moves on to the next conditional statement.
+// It also checks to see if zip is greater than 80000. It's not. The first conditional statement fails since both conditions are not meant.
+// The code enters the next conditional statement. It checks to see if isStudent is false. It's not.
+// It then checks to see if age is less than 30. It's not. Since neither of these statements are true, the code moves on to the next conditional statement.
 // It checks to see if isStudent is true. It is, so the console logs "Welcome to Prime!".
 // The code skips the else directive since it has already met one of the conditional statements.
 
@@ -144,6 +144,8 @@ let mix = true;
 
 if (mix === true) {
   colorOne = 'purple';
+// FIX - colorTwo should also be set to 'purple'.
+// Should include a line colorTwo = 'purple';
 }
 */
 
@@ -156,6 +158,8 @@ let temp = 40;
 const time = 4;
 
 if (temp > 39 || time >= 4) {
+// FIX - the conditional statement is "and" not "or".
+// Should be if (temp > 39 && time >= 4) {
   console.log('throw away the food!');
 }
 */
@@ -169,6 +173,9 @@ let age = 21;
 const minAge = 21;
 
 if(minAge <= age) {
+// FIX - the conditional statement is greater than or equal to means entry.
+// The quick fix is to just get rid of the = sign and all the rest of the lines can stay the same.
+// Should be if(minAge > age) {
   console.log('no entry');
 } else {
   console.log('enter');
